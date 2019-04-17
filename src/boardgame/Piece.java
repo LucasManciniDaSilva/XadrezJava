@@ -20,7 +20,7 @@ public abstract class Piece {
 	//Method to check the possible moves of a piece
 	public abstract boolean[][] possibleMoves();
 	
-	public boolean possibleMoves(Position position) {
+	public boolean possibleMove(Position position) {
 		return possibleMoves()[position.getRow()][position.getColumn()];
 	}
 	
